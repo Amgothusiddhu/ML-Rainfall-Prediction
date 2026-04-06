@@ -52,7 +52,7 @@ Output:
 
 ## ⚙️ Installation & Setup (Local / EC2)
 
-### 1️⃣ Update System & Install Packages
+### 1️⃣ Update System & Install Dependencies
 
 ```bash
 sudo apt update
@@ -80,10 +80,18 @@ source venv/bin/activate
 
 ---
 
-### 4️⃣ Install Dependencies
+### 4️⃣ Install Required Packages
+
+⚠️ If `requirements.txt` exists:
 
 ```bash
 pip install -r requirements.txt
+```
+
+👉 If NOT (first-time setup):
+
+```bash
+pip install flask numpy pandas scikit-learn
 ```
 
 ---
@@ -120,7 +128,7 @@ http://<your-ec2-ip>:5000
    * 22 (SSH)
    * 5000 (App)
 3. Connect via SSH
-4. Run setup commands above
+4. Run setup commands
 5. Start application
 
 ---
@@ -152,8 +160,4 @@ ML-Rainfall-Prediction/
 
 GitHub: https://github.com/Amgothusiddhu
 
----
 
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
