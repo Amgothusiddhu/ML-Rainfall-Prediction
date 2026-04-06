@@ -24,9 +24,11 @@ A modern and interactive **Rainfall Prediction Web Application** built using Fla
 
 The app uses a simple formula:
 
+```
 Rainfall (cm) = (Temperature + Humidity + Wind Speed) / 10
+```
 
-Based on the result, rainfall is classified as:
+### 📊 Classification
 
 | Rainfall (cm) | Type                |
 | ------------- | ------------------- |
@@ -40,56 +42,66 @@ Based on the result, rainfall is classified as:
 
 ## 🖥️ Example
 
+```
 Input:
 10, 20, 30
 
 Output:
 🌧️ Rainfall: 6.0 cm → ⛈️ Heavy Rain
+```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 1. Clone Repository
+### 1️⃣ Clone Repository
 
+```bash
 git clone https://github.com/Amgothusiddhu/ML-Rainfall-Prediction.git
 cd ML-Rainfall-Prediction
+```
 
----
+### 2️⃣ Create Virtual Environment
 
-### 2. Create Virtual Environment
-
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
----
+### 3️⃣ Install Dependencies
 
-### 3. Install Dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
----
+### 4️⃣ Run Application
 
-### 4. Run Application
-
+```bash
 python app.py
+```
 
 ---
 
 ## 🌐 Access the Application
 
-Local:
-http://localhost:5000
+* Local:
 
-EC2:
+```
+http://localhost:5000
+```
+
+* EC2:
+
+```
 http://<your-ec2-ip>:5000
+```
 
 ---
 
 ## ☁️ Deployment (AWS EC2)
 
 1. Launch Ubuntu EC2 instance
-2. Allow ports: 22, 5000
+2. Allow ports: **22, 5000**
 3. Install Python & Git
 4. Clone repository
 5. Run application
@@ -98,6 +110,7 @@ http://<your-ec2-ip>:5000
 
 ## 📁 Project Structure
 
+```
 ML-Rainfall-Prediction/
 │── app.py
 │── templates/
@@ -105,6 +118,7 @@ ML-Rainfall-Prediction/
 │── requirements.txt
 │── README.md
 │── .gitignore
+```
 
 ---
 
