@@ -22,9 +22,7 @@ A modern and interactive **Rainfall Prediction Web Application** built using Fla
 
 ## 🧠 How It Works
 
-The app uses a simple formula:
-
-```
+```text
 Rainfall (cm) = (Temperature + Humidity + Wind Speed) / 10
 ```
 
@@ -42,7 +40,7 @@ Rainfall (cm) = (Temperature + Humidity + Wind Speed) / 10
 
 ## 🖥️ Example
 
-```
+```text
 Input:
 10, 20, 30
 
@@ -52,29 +50,45 @@ Output:
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation & Setup (Local / EC2)
 
-### 1️⃣ Clone Repository
+### 1️⃣ Update System & Install Packages
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install python3 python3-pip python3-venv git -y
+```
+
+---
+
+### 2️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/Amgothusiddhu/ML-Rainfall-Prediction.git
 cd ML-Rainfall-Prediction
 ```
 
-### 2️⃣ Create Virtual Environment
+---
+
+### 3️⃣ Create Virtual Environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3️⃣ Install Dependencies
+---
+
+### 4️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Run Application
+---
+
+### 5️⃣ Run Application
 
 ```bash
 python app.py
@@ -98,13 +112,16 @@ http://<your-ec2-ip>:5000
 
 ---
 
-## ☁️ Deployment (AWS EC2)
+## ☁️ Deployment on AWS EC2
 
 1. Launch Ubuntu EC2 instance
-2. Allow ports: **22, 5000**
-3. Install Python & Git
-4. Clone repository
-5. Run application
+2. Allow ports:
+
+   * 22 (SSH)
+   * 5000 (App)
+3. Connect via SSH
+4. Run setup commands above
+5. Start application
 
 ---
 
